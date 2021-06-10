@@ -10,13 +10,6 @@ import Card from 'react-bootstrap/Card'
 
 export default function FAQ() {
     
-    const [filter, setFilter] = useState(true)
-
-    function onChangeFilter() {
-        setFilter(!filter)
-        console.log(filter)
-    }
-
   return (
     <div>
       <Head>
