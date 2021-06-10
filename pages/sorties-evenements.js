@@ -5,7 +5,7 @@ import CardActivity from '../Components/CardActivity'
 import Footer from '../Components/Footer'
 import styles from '../styles/Home.module.css'
 
-export default function Sorties() {
+export default function Sorties( {test} ) {
   return (
     <div>
       <Head>
@@ -17,6 +17,7 @@ export default function Sorties() {
 
       <main >
         <Banner />
+        <div>{test}</div>
         <CardActivity />
         <Footer />
       </main>
@@ -24,4 +25,14 @@ export default function Sorties() {
       
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const test = await fetch("http://localhost:3000/api/hello")
+    .then (res => res.json())
+  return {
+    props: {
+      test
+    },
+  }
 }

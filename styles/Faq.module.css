@@ -1,0 +1,14 @@
+.title {
+  color: #d9354f;
+}
+.title::after {
+  content: "";
+  display: block;
+  background-color: #d9354f;
+  height: 3px;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}

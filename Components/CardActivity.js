@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function CardActivity() {
 
     return (  
-        <div className="row m-0 d-flex flex-column flex-md-row">
+        <div className="row mx-0 mb-5 d-flex flex-column flex-md-row">
             <h2 className={`${styles.title} text-center mb-5`}>PARTAGEZ DES EXPÉRIENCES AUTHENTIQUES</h2>
             
             <div className="col col-md-6 col-lg-3">
