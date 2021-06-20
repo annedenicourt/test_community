@@ -55,7 +55,7 @@ export default function Experiences({}) {
                 Il vous suffit ensuite de scroller et de choisir l’expérience à laquelle vous souhaitez participer.
                 Vous pouvez regarder la liste déroulante des expériences, mais aussi les géolocaliser pour voir la plus proche de vous en cliquant sur « map »
                 </p>
-                <div>
+                <div className="mt-5">
                     <Link href="/"><img src="/images/logo_apple.png" width="150" className={`${styles.social_media} me-2 mb-4`} alt="logo Google"/></Link>
                     <Link href="/"><img src="/images/logo_google.png" width="150" className={`${styles.social_media} me-2 mb-4`} alt="logo Apple"/></Link>
                 </div>
@@ -68,7 +68,7 @@ export default function Experiences({}) {
                 Un e-mail vous est envoyé avec tous les détails de votre rendez-vous : lieux, téléphone du chaperon, confirmation de votre paiement.
                 Votre place est bookée !
                 Vous pouvez aussi retrouver toutes vos expériences réservées dans votre profil.</p>
-                <div>
+                <div className="mt-5">
                     <Link href="/"><img src="/images/logo_apple.png" width="150" className={`${styles.social_media} me-2 mb-4`} alt="logo Google"/></Link>
                     <Link href="/"><img src="/images/logo_google.png" width="150" className={`${styles.social_media} me-2 mb-4`} alt="logo Apple"/></Link>
                 </div>            
@@ -84,6 +84,7 @@ export default function Experiences({}) {
             </div>
         </div>
         <CardActivity />
+        <Link href="/experiences"><div className="fixed-bottom text-end me-2"><i className="bi bi-arrow-up-square-fill fs-3"></i></div></Link>
         <Footer />
       </main>
     </div>

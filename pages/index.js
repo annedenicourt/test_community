@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css';
 import Banner from '../Components/Banner'
 import CardActivity from '../Components/CardActivity'
@@ -94,7 +95,7 @@ export default function Home() {
             </div>
             <CardActivity />
             <Contact />
-            <div className="fixed-bottom text-end me-2"><i className="bi bi-arrow-up-square-fill fs-2"></i></div>
+            <Link href="/"><div className="fixed-bottom text-end me-2"><i className="bi bi-arrow-up-square-fill fs-3"></i></div></Link>
             <Footer />
         </main>
     </div>

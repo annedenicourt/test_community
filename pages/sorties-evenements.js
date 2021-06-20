@@ -28,7 +28,7 @@ export default function Sorties() {
             </div>
             <div className="col col-lg-6 p-lg-5 d-none d-lg-block">
                 <Image className=""
-                src="/images/image1.jpg"
+                src="/images/image18.jpg"
                 alt="boussole"
                 width={300}
                 height={200} 
@@ -77,7 +77,8 @@ export default function Sorties() {
                 <div className="mt-5">
                     <Link href="/"><img src="/images/logo_apple.png" width="150" className={`${styles.social_media} me-2 mb-4`} alt="logo Google"/></Link>
                     <Link href="/"><img src="/images/logo_google.png" width="150" className={`${styles.social_media} me-2 mb-4`} alt="logo Apple"/></Link>
-                </div>            </div>
+                </div>            
+            </div>
             <div className="col col-lg-6 p-lg-5">
                 <Image className="p-3"
                 src="/images/image15.png"
@@ -89,6 +90,7 @@ export default function Sorties() {
             </div>
         </div>
         <CardActivity />
+        <Link href="/sorties-evenements"><div className="fixed-bottom text-end me-2"><i className="bi bi-arrow-up-square-fill fs-3"></i></div></Link>
         <Footer />
       </main>
 
