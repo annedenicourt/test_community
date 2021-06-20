@@ -94,6 +94,7 @@ export default function Home() {
             </div>
             <CardActivity />
             <Contact />
+            <div className="fixed-bottom text-end me-2"><i className="bi bi-arrow-up-square-fill fs-2"></i></div>
             <Footer />
         </main>
     </div>

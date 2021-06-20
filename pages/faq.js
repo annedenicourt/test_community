@@ -23,7 +23,7 @@ export default function FAQ() {
         <Banner/>
         <div className="row mx-0 mt-5 mb-5 justify-content-center">
         <h2 className={`${styles.title} text-center mb-3`}>NOUS RÉPONDONS À VOS QUESTIONS</h2>
-            <div className="col-8 mt-5 mb-5">
+            <div className="col col-lg-8 mt-5 mb-5">
                 <div className="accordion accordion-flush" id="accordionExample">
                     <div className="accordion-item">
                         <h2 className="accordion-header" id="headingOne">
@@ -56,7 +56,7 @@ export default function FAQ() {
                     <div className="accordion-item">
                         <h2 className="accordion-header" id="headingThree">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            COMMENT SÉLECTIONNER UNIQUEMENT LES ÉVÉNEMENTS SUCEPTIBLES DE M'INTÉRESSER ?
+                            COMMENT SÉLECTIONNER UNIQUEMENT LES ÉVÉNEMENTS SUSCEPTIBLES DE M'INTÉRESSER ?
                             </button>
                         </h2>
                         <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import Banner from '../Components/Banner'
 import CardActivity from '../Components/CardActivity'
 import Footer from '../Components/Footer'
@@ -17,6 +18,76 @@ export default function Sorties() {
 
       <main >
         <Banner />
+        <div className="row mx-0 mb-5 mb-lg-2 align-items-center d-flex flex-column flex-lg-row">
+            <div className="col col-lg-6 text-center">
+                <h2 className={`${styles.title} mt-5 mt-lg-0 mb-3 mb-lg-5`}>OÙ SORTIR CE WEEK-END ? </h2>
+                <p className="px-5"> Où que vous soyez, connectez-vous sur Community pour savoir comment vous divertir, où sortir, où voyager !
+                Nous géolocalisons plus de 380 000 évènements réactualisés tous les jours en France.
+                Fini les questions comme : qu’est-ce qu’on peut faire ce soir pour changer de la routine? Demain ? Ce week-end ?
+                Community devient votre agenda unique de sortie !</p>
+            </div>
+            <div className="col col-lg-6 p-lg-5 d-none d-lg-block">
+                <Image className=""
+                src="/images/image1.jpg"
+                alt="boussole"
+                width={300}
+                height={200} 
+                layout="responsive"
+                />
+            </div>
+        </div>
+        <div className="row mx-0 mb-5 mb-lg-2 align-items-center d-flex flex-column flex-lg-row">
+            <div className="col col-md-6 col-lg-3 ">
+                <Image className=""
+                src="/images/image13.png"
+                alt="boussole"
+                width={1000}
+                height={1900} 
+                layout="responsive"
+                />
+            </div>
+            <div className="col col-lg-3 d-none d-lg-block">
+                <Image className="p-lg-3"
+                src="/images/image14.png"
+                alt="boussole"
+                width={1000}
+                height={1900} 
+                layout="responsive"
+                />
+            </div>
+            <div className="col col-lg-6 text-center">
+                <h2 className={`${styles.title} mb-3 mb-lg-5`}>COMMENT CELA FONCTIONNE ? </h2>
+                <p className="px-5"> Ouvrez l’application, acceptez la géolocalisation, et tous les évènements qui se déroulent autour de vous apparaissent.
+                Vous pouvez filtrer par date : ce soir ? demain ? ce week-end ?
+                Et par catégories, en fonction de vos envies : Sortie culturelle ?Activité sportive ? Musée ? Soirée en boîte ? Sortie gastronomique? Sortir avec vos enfants ?
+                </p>
+                <div className="mt-5">
+                    <Link href="/"><img src="/images/logo_apple.png" width="150" className={`${styles.social_media} me-2 mb-4`} alt="logo Google"/></Link>
+                    <Link href="/"><img src="/images/logo_google.png" width="150" className={`${styles.social_media} me-2 mb-4`} alt="logo Apple"/></Link>
+                </div>
+            </div>   
+        </div>
+        <div className="row mx-0 mb-5 mb-lg-2 align-items-center d-flex flex-column flex-lg-row">
+            <div className="col col-lg-6 text-center">
+                <h2 className={`${styles.title} mb-3 mb-lg-5`}>S'INSCRIRE JUSTE EN 1 CLICK</h2>
+                <p className="px-5"> Il vous suffit de cliquer sur « cela m’intéresse » en bas de l’évènement, et celui-ci apparaitra dans votre agenda sur " Mon Profil / mes évènements ".
+                Par ailleurs, en plus de tous ces évènements gratuits que nous vous faisons découvrir, nous vous proposons de réserver des expériences uniques en direct avec nos chaperons.
+                Partagez vos sorties avec vos proches est facile et rapide – partager des moments en famille ou entre amis c’est toujours plus sympa !
+                !</p>
+                <div className="mt-5">
+                    <Link href="/"><img src="/images/logo_apple.png" width="150" className={`${styles.social_media} me-2 mb-4`} alt="logo Google"/></Link>
+                    <Link href="/"><img src="/images/logo_google.png" width="150" className={`${styles.social_media} me-2 mb-4`} alt="logo Apple"/></Link>
+                </div>            </div>
+            <div className="col col-lg-6 p-lg-5">
+                <Image className="p-3"
+                src="/images/image15.png"
+                alt="boussole"
+                width={1024}
+                height={1024} 
+                layout="responsive"
+                />
+            </div>
+        </div>
         <CardActivity />
         <Footer />
       </main>
